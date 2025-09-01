@@ -5,14 +5,35 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="" />
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
-  <meta name="generator" content="Astro v5.13.2" />
   <title>Formação Analista em Mapeamento de Perfil Comportamental (DISC)</title>
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/" />
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <meta name="theme-color" content="#712cf9" />
   <!-- <link href="product.css" rel="stylesheet" /> -->
   <style>
+    html {
+      scroll-padding-top: 4.5em;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+    .roboto {
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+    }
+
+    .roboto-bold {
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+    }
+
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -98,9 +119,10 @@
   </style>
 </head>
 
-<body class="bg-dark text-light ">
+<body class="bg-dark text-light roboto">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-3 border-primary"
+    aria-label="Fifth navbar example">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="img/logo-topo.png" class="img-fluid" alt="">
@@ -113,12 +135,12 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-evenly w-100">
 
           <li class="nav-item"><a class="nav-link" href="#">Conheça o Produto</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Conteúdos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Seu Instrutor</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Suporte</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Módulos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Depoimentos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Perguntas Frequentes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#conteudos">Conteúdos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#instrutor">Seu Instrutor</a></li>
+          <li class="nav-item"><a class="nav-link" href="#suporte">Suporte</a></li>
+          <li class="nav-item"><a class="nav-link" href="#modulos">Módulos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">Perguntas Frequentes</a></li>
 
         </ul>
       </div>
@@ -132,7 +154,7 @@
 
         <div class="row py-5">
           <div class="col-lg-7">
-            <h1 class="display-3">
+            <h1 class="display-4 roboto-bold">
               Formação Analista em Mapeamento de Perfil Comportamental (DISC)
             </h1>
             <p class="lead">Descubra como lidar com os quatro perfis comportamentais básicos. Aprenda a reconhecer
@@ -142,8 +164,15 @@
           </div>
 
           <div class="col-lg-5">
-            <img src="img/img-banner.png" class="img-fluid" alt="">
+            <iframe width="100%" height="330" class="py-4"
+              src="https://www.youtube.com/embed/xGm7kvrVYAo?si=oelGQverePnLfb-S&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
+          <!-- <div class="col-lg-5">
+            <img src="img/img-banner.png" class="img-fluid" alt="">
+          </div> -->
 
         </div>
 
@@ -151,7 +180,7 @@
     </section>
 
     <!-- O PRODUTO -->
-    <section class="py-5" id="produto">
+    <!-- <section class="py-5" id="produto">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -162,38 +191,465 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-
         </div>
       </div>
+    </section> -->
 
-    </section>
-    
     <!-- O QUE VAI APRENDER -->
-    <section class="py-5" id="produto">
+    <section class="py-5" id="conteudos">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>O que você vai aprender</h2>            
+          <div class="col-lg-12 text-center py-5 ">
+            <h2 class="text-uppercase">O que você vai aprender</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 p-5 border text-center">col</div>
-          <div class="col-lg-6 p-5 border text-center">col</div>
-          <div class="col-lg-6 p-5 border text-center">col</div>
-          <div class="col-lg-6 p-5 border text-center">col</div>
+          <div class="col-lg-6 p-5 border border-dark border-3 rounded bg-primary  text-center">
+            <h2 class="roboto-bold">Identificar perfis comportamentais</h2>
+            <p>Identificar perfis comportamentais
+              Cada pessoa tem um perfil comportamental predominante e a capacidade de reconhecê-los vai transformar sua
+              forma de gestão, aumentando exponencialmente seus resultados. Pessoas transformam as empresas.
+            </p>
+          </div>
+          <div class="col-lg-6 p-5 border border-dark border-3 rounded bg-primary text-center">
+            <h2 class="roboto-bold">Aplicar a gestão comportamental no seu cotidiano</h2>
+            <p>
+              Descubra seus talentos pessoais e defina objetivos para aperfeiçoá-los, interligando-os aos objetivos da
+              sua empresa.
+            </p>
+          </div>
+          <div class="col-lg-6 p-5 border border-dark border-3 rounded bg-primary text-center">
+            <h2 class="roboto-bold">Melhorar a comunicação da sua empresa</h2>
+            <p>
+              Saiba como se comunicar com cada perfil e tenha mais harmonia nas relações pessoais. Aprenda também a se
+              comunicar melhor com seus clientes e potencializar ainda mais seus resultados.
+            </p>
+          </div>
+          <div class="col-lg-6 p-5 border border-dark border-3 rounded bg-primary text-center">
+            <h2 class="roboto-bold">Fazer o RH tornar-se um setor estratégico e mais valorizado</h2>
+            <p>
+              Tenha dados para evidenciar os resultados estratégicos do RH, ressaltando que a empresa depende de sua
+              atuação estratégica. Torne o RH cada vez mais participativo nas decisões de gestão
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTRUTOR -->
+    <section class="py-5" id="instrutor">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center py-5 ">
+            <h2 class="text-uppercase">Fique tranquilo, você vai aprender do conforto da sua casa com o especialista
+              Selomar Breda</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-4">
+            <img src="img/img-instrutor.png" class="img-fluid mx-auto d-block" alt="">
+          </div>
+          <div class="col-lg-8 lead">
+            <p>Selomar Breda é graduado em Administração e possui MBA Executivo em Gestão Empresarial. Profissional
+              registrado no CRA-GO sob o n° 6-00149. Coach Empresarial e Trainer de Analistas comportamentais DISC há
+              mais de 10 anos. Trabalha com grandes organizações nacionais e multinacionais e atua como consultor e
+              mentor de coaches e analistas comportamentais no Brasil, Portugal, Itália e Irlanda.</p>
+            <p>Sua missão é inspirar as pessoas, convidando-as a se permitirem ir além, facilitando o reconhecimento de
+              novas perspectivas das nossas potencialidades, habilidades e virtudes para que tenham uma vida cheia de
+              propósito e realizações.</p>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SUPORTE -->
+    <section class="py-5" id="suporte">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center py-5 ">
+            <h2 class="text-uppercase">Você vai ter todo o suporte necessário com Patrícia Fonseca</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-4">
+            <img src="img/img-suporte.png" class="img-fluid mx-auto d-block" alt="">
+          </div>
+          <div class="col-lg-8 lead">
+            <p>Patrícia Fonseca é graduada em Ciências Sociais e pós-graduada em Antropologia. É Life Coach,
+              especialista em Coaching Vocacional e de Carreira, e trabalha com análise de perfil comportamental desde
+              2015. Atuou por 8 anos como educadora em uma das maiores ONGs do país (CIEE), auxiliando centenas de
+              adolescentes e jovens na inserção no mercado de trabalho. Atua voluntariamente em projetos de
+              empreendedorismo feminino e juvenil com o objetivo de difundir educação empreendedora.</p>
+            <p>Sua missão é ajudar o maior número de pessoas a descobrirem seus talentos e potenciais para assumirem o
+              protagonismo em suas vidas.</p>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- MODULOS -->
+    <section class="py-5" id="modulos">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center py-5 ">
+            <h2 class="text-uppercase">Módulos da Formação</h2>
+            <p>Certificado emitido pelo Trainer Comportamental Selomar Breda conforme a legislação federal (Lei nº
+              9394/96, Decreto nº 5.154/04 e Deliberação CEE 14/97).</p>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 p-5 border border-dark border-3 rounded bg-primary  text-center">
+            <h2 class="roboto-bold">Introdução</h2>
+            <p>Apresentação do programa, benefícios e estrutura; histórico sobre comportamento humano; introdução à
+              metodologia DISC. </p>
+          </div>
+          <div class="col-lg-4 p-5 border border-dark border-3 rounded bg-primary text-center">
+            <h2 class="roboto-bold">Índices e gráficos e suas aplicabilidades</h2>
+            <p>Análise de gráficos e indicadores situacionais (pique para o trabalho, flexibilidade, automotivação,
+              moral, autoestima, entre outros); análise de gráficos com 24 indicadores de competências (tolerância,
+              capacidade de ouvir, planejamento, organização, dinamismo, multitarefas); análise de pontos fortes e de
+              melhoria; análise do ambiente de trabalho; apresentação de cases de avaliações comportamentais.</p>
+          </div>
+          <div class="col-lg-4 p-5 border border-dark border-3 rounded bg-primary text-center">
+            <h2 class="roboto-bold">Liderança</h2>
+            <p>
+              Os quatro perfis de liderança DISC; combinações de perfis de liderança; estilos de liderança e ambientes;
+              habilidades básicas de cada perfil; interação da liderança com o meio ambiente; cases de avaliações
+              comportamentais sob o ponto de vista da liderança.
+            </p>
+          </div>
+          <div class="col-lg-4 p-5 border border-dark border-3 rounded bg-primary text-center">
+            <h2 class="roboto-bold">Perfis Comportamentais</h2>
+            <p>
+              Os quatro perfis comportamentais DISC; combinações; habilidades, relacionamentos, tomada de decisões;
+              vantagens e desvantagens.
+            </p>
+          </div>
+          <div class="col-lg-12 p-5 border border-dark border-3 rounded bg-primary text-center">
+            <h2 class="roboto-bold">E mais: </h2>
+            <p>• Como dar uma boa devolutiva?</p>
+            <p>• A Arte da Comunicação Assertiva</p>
+            <p>• Como monetizar o meu conhecimento da ferramenta DISC? </p>
+            <p>• Elaborando um Plano de Desenvolvimento Pessoal.</p>
+            <p>• Conhecendo a Plataforma Web.</p>
+            <p>• Como responder o Questionário?</p>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INSCREVA-SE -->
+    <section class="py-5" id="inscreva-se">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center py-5 ">
+            <h2 class="text-uppercase">Inscreva-se agora!</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-6 offset-lg-3 lead text-center">
+            <h3 class="roboto-bold"> Formação Analista em Mapeamento de Perfil Comportamental (DISC)</h3>
+            <p>De R$ <del class="h2 roboto-bold">899,00</del> por R$ <span class="h2 roboto-bold">599,90</span> à vista.
+            </p>
+            <p>Você pode parcelar até 10X no cartão de crédito</p>
+            <p>Aulas gravadas, exercícios online, material de apoio em PDF.</p>
+          </div>
+        </div>
+        <div class="row text-center mt-5">
+          <div class="col-lg-6 offset-lg-3 lead text-center">
+            <h3 class="roboto-bold">Bônus incluído:</h3>
+            <p>1 Avaliação comportamental personalizada gratuita; </p>
+            <p>Suporte por WhatsApp;</p>
+            <p>Acesso a Plataforma WEB;</p>
+            <p>1 credito DISC de cortesia; </p>
+            <p>Certificado de Conclusão Internacional como Analista em Mapeamento de Perfil Comportamental (DISC).</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FRASE -->
+    <section class="py-5" id="frase">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center py-5 ">
+            <h2 class="text-uppercase">Você sabia que 9 em cada 10 demissões são causadas pelo comportamento?</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-8 offset-lg-2 lead">
+            <p>Aprenda como reconhecer talentos e competências e pare de desperdiçar tempo e dinheiro! Mais estratégia e
+              menos operação para sua empresa!</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="py-5" id="depoimentos">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center py-5 ">
+            <h2 class="text-uppercase">Depoimentos</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-3 lead">
+            <p>col</p>
+          </div>
+          <div class="col-lg-3 lead">
+            <p>col</p>
+          </div>
+          <div class="col-lg-3 lead">
+            <p>col</p>
+          </div>
+          <div class="col-lg-3 lead">
+            <p>col</p>
+          </div>
+          <div class="col-lg-3 lead">
+            <p>col</p>
+          </div>
+          <div class="col-lg-3 lead">
+            <p>col</p>
+          </div>
+          <div class="col-lg-3 lead">
+            <p>col</p>
+          </div>
+          <div class="col-lg-3 lead">
+            <p>col</p>
+          </div>
         </div>
       </div>
 
     </section>
 
 
+    <!-- FAQ -->
+    <section class="py-5" id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center py-5 ">
+            <h2 class="text-uppercase">Perguntas Frequentes</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
 
 
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Para quem é esta formação?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      Para profissionais que buscam alta performance e desejam aprender a reconhecer talentos,
+                      comportamentos e competências de forma eficaz e assertiva.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Recebo certificado de conclusão?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sim. Certificado de Analista em Mapeamento de Perfil Comportamental, conforme legislação federal
+                    (Lei nº 9394/96 etc.).
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+                    Terei apoio dentro da formação?
+                  </button>
+                </h2>
+                <div id="collapseThree1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sim, com suporte via WhatsApp para sanar dúvidas.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                    Qual o impacto da análise do perfil DISC dentro da empresa?
+                  </button>
+                </h2>
+                <div id="collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Permite maior precisão em recrutamento, retenção de talentos, desenvolvimento de lideranças, gestão
+                    por competências, clima organizacional, gestão de conflitos, engenharia de equipes, coaching
+                    interno, e melhor relação e produtividade com clientes.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                    Vou conseguir colocar em prática o que aprender?
+                  </button>
+                </h2>
+                <div id="collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sim. A metodologia evita esquecimentos típicos de cursos intensivos e permite absorção e aplicação
+                    consistente dos conteúdos.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                    Como será disponibilizado o acesso após a inscrição?
+                  </button>
+                </h2>
+                <div id="collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Após o pagamento, você recebe imediatamente login e senha para a plataforma.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+                    Posso usar essa formação como fonte de renda?
+                  </button>
+                </h2>
+                <div id="collapseThree5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sim, você pode atuar como consultor independente, presencial ou online nas áreas de recrutamento,
+                    outplacement, desenvolvimento de carreiras, liderança e treinamentos in-company.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
+                    Por que preciso aprender este conteúdo?
+                  </button>
+                </h2>
+                <div id="collapseThree6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Segundo apuração da Page Personnel via G1 (2018), 90% das demissões ocorrem por conduta inadequada,
+                    não por aptidão técnica. Conhecer comportamento é essencial para se manter um profissional de alta
+                    performance.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree7" aria-expanded="false" aria-controls="collapseThree7">
+                    Por que preciso aprender este conteúdo?
+                  </button>
+                </h2>
+                <div id="collapseThree7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Segundo apuração da Page Personnel via G1 (2018), 90% das demissões ocorrem por conduta
+                      inadequada, não por aptidão técnica. Conhecer comportamento é essencial para se manter um
+                      profissional de alta performance.</p>
+                    <p>Também, o RH enfrenta o desafio de integrar diferentes comportamentos, competências e gerações.
+                      Ferramentas como a Formação DISC tornam essa tarefa mais assertiva.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree8" aria-expanded="false" aria-controls="collapseThree8">
+                    A análise comportamental ajuda em coaching e terapias?
+                  </button>
+                </h2>
+                <div id="collapseThree8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sim. Os relatórios DISC fornecem dados precisos sobre o cliente, aumentando a assertividade e
+                    tornando o profissional um agente transformador de pessoas.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <section class="py-5" id="frase">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center py-5 ">
+            <h2 class="roboto-bold">"Quem entende de pessoas, entende de negócios."</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+          </div>
+        </div>
+        <div class="row text-center">
+
+          <div class="d-flex justify-content-center ">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+              class="bi bi-instagram mx-2" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+              class="bi bi-linkedin mx-2" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+            </svg>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
 
   </main>
 
-  <footer class="py-5 bg-dark">
-
+  <footer class=" bg-primary py-4">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          Copyright © 2022. Todos os direitos reservados.
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="bootstrap/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
