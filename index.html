@@ -15,10 +15,10 @@
 
 <body class="bg-dark text-light roboto">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Fifth navbar example">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-5" aria-label="Fifth navbar example">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="img/logo-topo.png" class="img-fluid" alt="">
+        <img src="img/logo-topo-branco.png" class="img-fluid" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
         aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +27,15 @@
       <div class="collapse navbar-collapse" id="navbarsExample05">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-evenly w-100">
 
-          <li class="nav-item"><a class="nav-link" href="#">Conheça o Produto</a></li>
-          <li class="nav-item"><a class="nav-link" href="#conteudos">Conteúdos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#instrutor">Seu Instrutor</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">Conheça o Produto</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#conteudos">O que Você vai Aprender </a></li>
+          <li class="nav-item"><a class="nav-link" href="#instrutor">O Especialista</a></li>
           <li class="nav-item"><a class="nav-link" href="#suporte">Suporte</a></li>
           <li class="nav-item"><a class="nav-link" href="#modulos">Módulos</a></li>
           <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
           <li class="nav-item"><a class="nav-link" href="#faq">Perguntas Frequentes</a></li>
+          <a href="#inscricao" class="btn btn-dark bg-roxo px-5 roboto-bold border-roxo-claro border-2"> <span
+              class="m-0">Increva-se agora!</span></a>
 
         </ul>
       </div>
@@ -42,30 +44,29 @@
   <main>
 
     <!-- BANNER -->
-    <section class="bg-roxo py-5">
-      <div class="container">
+    <section class="bg-roxo py-5"
+      style="background: url('img/bg-home-0.jpg'); background-position: center; background-size: cover;">
+      <div class="container-fluid">
 
         <div class="row py-5">
-          <div class="col-lg-7">
+          <div class="col-lg-1"></div>
+
+          <div class="col-lg-4">
             <h1 class="display-4 roboto-bold">
               Formação Analista em Mapeamento de Perfil Comportamental (DISC)
             </h1>
             <p class="lead">Descubra como lidar com os quatro perfis comportamentais básicos. Aprenda a reconhecer
-              talentos,
-              comportamentos e competências de forma eficaz e assertiva.</p>
-            <a href="#inscricao" class="btn btn-dark px-5 py-2"> Increva-se agora!</a>
+              talentos, comportamentos e competências de forma eficaz e assertiva.</p>
+            <div class="pt-5">
+              <a href="#inscricao" class="btn text-white bg-dark px-5 py-3 p-2 roboto-bold border-roxo-claro border-2">
+                <h4 class="m-0">Increva-se agora!</h4>
+              </a>
+            </div>
+
           </div>
 
-          <div class="col-lg-5">
-            <iframe width="100%" height="330" class="py-4"
-              src="https://www.youtube.com/embed/xGm7kvrVYAo?si=oelGQverePnLfb-S&amp;controls=0"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="col-lg-7">
           </div>
-          <!-- <div class="col-lg-5">
-            <img src="img/img-banner.png" class="img-fluid" alt="">
-          </div> -->
 
         </div>
 
@@ -90,45 +91,49 @@
 
     <!-- O QUE VAI APRENDER -->
     <section class="py-5" id="conteudos">
-      <div class="container pb-5">
+
+      <div class="container text-center mb-5">
         <div class="row">
           <div class="col-lg-12 text-center py-5 ">
-            <h2 class="text-uppercase">O que você vai aprender</h2>
-            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+            <h2 class="text-uppercase roboto-bold">O que Você vai Aprender</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-roxo-claro"></div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6 p-5 border border-dark border-3 rounded bg-roxo  text-center">
+
+        <div class="row justify-content-lg-center">
+          <div class="col-5 p-5 border border-roxo-claro border-2 m-1  rounded bg-roxo  text-center">
             <h2 class="roboto-bold">Identificar perfis comportamentais</h2>
             <p>Identificar perfis comportamentais
               Cada pessoa tem um perfil comportamental predominante e a capacidade de reconhecê-los vai transformar sua
               forma de gestão, aumentando exponencialmente seus resultados. Pessoas transformam as empresas.
             </p>
           </div>
-          <div class="col-lg-6 p-5 border border-dark border-3 rounded bg-roxo text-center">
+          <div class="col-5 p-5 border border-roxo-claro border-2 m-1  rounded bg-roxo text-center">
             <h2 class="roboto-bold">Aplicar a gestão comportamental no seu cotidiano</h2>
             <p>
               Descubra seus talentos pessoais e defina objetivos para aperfeiçoá-los, interligando-os aos objetivos da
               sua empresa.
             </p>
           </div>
-          <div class="col-lg-6 p-5 border border-dark border-3 rounded bg-roxo text-center">
+        </div>
+        <div class="row justify-content-lg-center">
+          <div class="col-5 p-5 border border-roxo-claro border-2 m-1  rounded bg-roxo text-center">
             <h2 class="roboto-bold">Melhorar a comunicação da sua empresa</h2>
             <p>
               Saiba como se comunicar com cada perfil e tenha mais harmonia nas relações pessoais. Aprenda também a se
               comunicar melhor com seus clientes e potencializar ainda mais seus resultados.
             </p>
           </div>
-          <div class="col-lg-6 p-5 border border-dark border-3 rounded bg-roxo text-center">
+          <div class="col-5 p-5 border border-roxo-claro border-2 m-1  rounded bg-roxo text-center">
             <h2 class="roboto-bold">Fazer o RH tornar-se um setor estratégico e mais valorizado</h2>
             <p>
               Tenha dados para evidenciar os resultados estratégicos do RH, ressaltando que a empresa depende de sua
               atuação estratégica. Torne o RH cada vez mais participativo nas decisões de gestão
             </p>
           </div>
-
         </div>
       </div>
+
     </section>
 
     <!-- INSTRUTOR -->
@@ -136,9 +141,10 @@
       <div class="container pb-5">
         <div class="row">
           <div class="col-lg-12 text-center py-5 ">
-            <h2 class="text-uppercase">Fique tranquilo, você vai aprender do conforto da sua casa com o especialista
+            <h2 class="text-uppercase roboto-bold">Fique tranquilo, você vai aprender do conforto da sua casa com o
+              especialista
               Selomar Breda</h2>
-            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-roxo-claro"></div>
           </div>
         </div>
         <div class="row d-flex align-items-center">
@@ -165,8 +171,8 @@
       <div class="container pb-5">
         <div class="row">
           <div class="col-lg-12 text-center py-5 ">
-            <h2 class="text-uppercase">Você vai ter todo o suporte necessário com Patrícia Fonseca</h2>
-            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+            <h2 class="text-uppercase roboto-bold">Você vai ter todo o suporte necessário com Patrícia Fonseca</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-roxo-claro"></div>
           </div>
         </div>
         <div class="row d-flex align-items-center">
@@ -193,10 +199,10 @@
       <div class="container pb-5">
         <div class="row">
           <div class="col-lg-12 text-center py-5 ">
-            <h2 class="text-uppercase">Módulos da Formação</h2>
+            <h2 class="text-uppercase roboto-bold">Módulos da Formação</h2>
             <p>Certificado emitido pelo Trainer Comportamental Selomar Breda conforme a legislação federal (Lei nº
               9394/96, Decreto nº 5.154/04 e Deliberação CEE 14/97).</p>
-            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-roxo-claro"></div>
           </div>
         </div>
         <div class="row">
@@ -254,12 +260,12 @@
       <div class="container pb-5">
         <div class="row">
           <div class="col-lg-12 text-center py-5 ">
-            <h2 class="text-uppercase">Inscreva-se agora!</h2>
-            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+            <h2 class="text-uppercase roboto-bold">Inscreva-se agora!</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-roxo-claro"></div>
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-lg-6 offset-lg-3 lead text-center border border-3 border-warning p-5 rounded">
+          <div class="col-lg-6 offset-lg-3 lead text-center border border-2 border-roxo-claro p-5 bg-roxo rounded">
             <h3 class="roboto-bold"> Formação Analista em Mapeamento de Perfil Comportamental (DISC)</h3>
             <p>De R$ <del class="h2 roboto-bold">899,00</del> por R$ <span class="h2 roboto-bold">599,90</span> à vista.
             </p>
@@ -268,7 +274,7 @@
           </div>
         </div>
         <div class="row text-center mt-5">
-          <div class="col-lg-6 offset-lg-3 lead text-center border border-3 border-warning p-5 rounded">
+          <div class="col-lg-6 offset-lg-3 lead text-center border border-2 border-roxo-claro p-5 bg-roxo rounded">
             <h3 class="roboto-bold">Bônus incluído:</h3>
             <p>1 Avaliação comportamental personalizada gratuita; </p>
             <p>Suporte por WhatsApp;</p>
@@ -279,7 +285,8 @@
         </div>
         <div class="row text-center mt-5">
           <div class="col-lg-6 offset-lg-3 lead text-center rounded">
-            <a href="#" class="btn btn-lg bg-roxo-claro px-5 text-white "> Fazer minha inscrição agora</a>
+            <a href="#" class="btn btn-lg bg-roxo border border-2 border-roxo-claro  px-5 text-white "> Fazer minha
+              inscrição agora</a>
           </div>
         </div>
       </div>
@@ -287,12 +294,13 @@
     </section>
 
     <!-- FRASE -->
-    <section class="py-5 bg-roxo" id="frase">
+    <!-- <section class="py-5 bg-roxo" id="frase">
       <div class="container pb-5">
         <div class="row">
           <div class="col-lg-12 text-center py-5 ">
-            <h2 class="text-uppercase">Você sabia que 9 em cada 10 demissões são causadas pelo comportamento?</h2>
-            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+            <h2 class="text-uppercase roboto-bold">Você sabia que 9 em cada 10 demissões são causadas pelo
+              comportamento?</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-roxo-claro"></div>
           </div>
         </div>
         <div class="row text-center">
@@ -301,7 +309,31 @@
               menos operação para sua empresa!</p>
           </div>
         </div>
+      </div> -->
+    <section class="py-5 parallax-section " id="frase">
+      <!-- Imagem de fundo com parallax -->
+      <div class="parallax-bg"></div>
+
+      <!-- Overlay com 50% de opacidade -->
+      <div class="parallax-overlay"></div>
+
+      <!-- Conteúdo da seção -->
+      <div class="container pb-5 parallax-content">
+        <div class="row">
+          <div class="col-lg-12 text-center py-5">
+            <h2 class="text-uppercase roboto-bold text-white">Você sabia que 9 em cada 10 demissões são causadas pelo
+              comportamento?</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-roxo-claro"></div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-8 offset-lg-2 lead">
+            <p class="text-white">Aprenda como reconhecer talentos e competências e pare de desperdiçar tempo e
+              dinheiro! Mais estratégia e menos operação para sua empresa!</p>
+          </div>
+        </div>
       </div>
+    </section>
 
     </section>
 
@@ -310,60 +342,80 @@
       <div class="container pb-5">
         <div class="row">
           <div class="col-lg-12 text-center py-5 ">
-            <h2 class="text-uppercase">Depoimentos</h2>
-            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+            <h2 class="text-uppercase roboto-bold">Depoimentos</h2>
+            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-roxo-claro"></div>
           </div>
         </div>
+
+
         <div class="row text-center">
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (1).png" class="img-fluid mx-auto" alt="">
+
+
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex">
+                  <img src="img/img-depoimento (1).png" class="img-fluid mx-auto w-50" alt="">
+                  <img src="img/img-depoimento (2).png" class="img-fluid mx-auto w-50" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <img src="img/img-depoimento (3).png" class="img-fluid mx-auto w-50" alt="">
+                  <img src="img/img-depoimento (4).png" class="img-fluid mx-auto w-50" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <img src="img/img-depoimento (5).png" class="img-fluid mx-auto w-50" alt="">
+                  <img src="img/img-depoimento (6).png" class="img-fluid mx-auto w-50" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <img src="img/img-depoimento (7).png" class="img-fluid mx-auto w-50" alt="">
+                  <img src="img/img-depoimento (8).png" class="img-fluid mx-auto w-50" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <img src="img/img-depoimento (9).png" class="img-fluid mx-auto w-50" alt="">
+                  <img src="img/img-depoimento (10).png" class="img-fluid mx-auto w-50" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <img src="img/img-depoimento (11).png" class="img-fluid mx-auto w-50" alt="">
+                  <img src="img/img-depoimento (12).png" class="img-fluid mx-auto w-50" alt="">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (2).png" class="img-fluid mx-auto" alt="">
-          </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (3).png" class="img-fluid mx-auto" alt="">
-          </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (4).png" class="img-fluid mx-auto" alt="">
-          </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (5).png" class="img-fluid mx-auto" alt="">
-          </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (6).png" class="img-fluid mx-auto" alt="">
-          </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (7).png" class="img-fluid mx-auto" alt="">
-          </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (8).png" class="img-fluid mx-auto" alt="">
-          </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (9).png" class="img-fluid mx-auto" alt="">
-          </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (10).png" class="img-fluid mx-auto" alt="">
-          </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (11).png" class="img-fluid mx-auto" alt="">
-          </div>
-          <div class="col-lg-6 lead mb-5">
-            <img src="img/img-depoimento (12).png" class="img-fluid mx-auto" alt="">
-          </div>
+
+
+
+
         </div>
-      </div>
 
     </section>
-
 
     <!-- FAQ -->
     <section class="py-5" id="faq">
       <div class="container pb-5">
         <div class="row">
           <div class="col-lg-12 text-center py-5 ">
-            <h2 class="text-uppercase">Perguntas Frequentes</h2>
-            <div class="w-25 border-1 mt-3 mx-auto border-bottom border-warning"></div>
+            <h2 class="text-uppercase roboto-bold">Perguntas Frequentes</h2>
+            <div class="w-25 border-1 mt-3 mx-auto w-50 border-bottom border-roxo-claro"></div>
           </div>
         </div>
         <div class="row">
@@ -524,7 +576,6 @@
       </div>
 
     </section>
-
 
     <!-- FOOTER -->
     <section class="py-5 bg-roxo" id="frase">
