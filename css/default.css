@@ -111,12 +111,24 @@ html {
   display: block !important;
 }
 
+.bg-gradient {
+  background: linear-gradient(to left top, #2E0875, #7A0474);
+}
+
+.bg-azul {
+  background-color: #2E0875;
+}
+
 .bg-roxo {
   background-color: #80297D;
 }
 
 .bg-roxo-claro {
   background-color: #D51BED;
+}
+
+.border-laranja {
+  border-color: #F29804 !important;
 }
 
 .border-roxo {
@@ -130,6 +142,10 @@ html {
 
 .text-roxo {
   color: #D51BED;
+}
+
+.text-laranja {
+  color: #F29804;
 }
 
 .accordion {
@@ -154,7 +170,6 @@ html {
   background-size: var(--bs-accordion-btn-icon-width);
   transition: var(--bs-accordion-btn-icon-transition);
 }
-
 
 
 .parallax-section {
@@ -184,7 +199,9 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(125, 44, 124, 0.7);
+  /* background-color: rgba(125, 44, 124, 0.7); */
+  background: linear-gradient(to left top, #2E0875, #7A0474);
+  opacity: 80%;
   /* Overlay de 50% com cor roxa */
   z-index: 1;
 }
