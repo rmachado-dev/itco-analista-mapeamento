@@ -115,6 +115,8 @@ a{
   display: block !important;
 }
 
+
+/* cores */
 .bg-gradient {
   background: linear-gradient(to left top, #2E0875, #7A0474);
 }
@@ -162,6 +164,17 @@ a{
   background-color: #d0e92b;
 }
 
+.bg-azul{
+  background-color: #001A66;
+}
+
+.nav-link{
+  color: #fff;
+}
+
+
+
+/* faq */
 .accordion {
   --bs-accordion-color: #000;
   --bs-accordion-bg: #ddd;
